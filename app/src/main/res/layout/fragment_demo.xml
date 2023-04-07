@@ -101,6 +101,7 @@
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.jiangdg.ausbc.widget.CaptureMediaView
@@ -196,7 +197,23 @@
             app:layout_constraintStart_toEndOf="@id/recordVideoModeTv"
             app:layout_constraintTop_toTopOf="parent" />
 
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/gotoDashboardBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        android:text="Dashboard"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/controlPanelLayout"
+        app:layout_constraintTop_toTopOf="@+id/controlPanelLayout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/recTimerLayout"
